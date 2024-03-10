@@ -1,0 +1,21 @@
+.project-card {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgb(197, 20, 20);
+    padding: 20px;
+    text-align: center;
+    width: 300px;
+    margin-left: 800px;
+    margin-top: 30px;
+  }
+  
+  .project-card h2 {
+    font-size: 1.5rem;
+  }
+  
+  .project-card .project-count {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-top: 10px;
+  }
+  
