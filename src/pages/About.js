@@ -10,7 +10,7 @@ const About = () => {
       {/* <Content /> */}
 
       {/* this is for picture showing */}
-      <NumPro numberOfProjects="10" />
+      <NumPro numberOfProjects="0" />
       <Gallery />
     </>
   );
