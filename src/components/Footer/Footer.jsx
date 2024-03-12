@@ -57,10 +57,11 @@ const Footer = () => {
       
       <StackColumn>
         <FooterTitle text={'our services'} />
-        <FooterLink text={'buy house'} />
-        <FooterLink text={'sell house'} />
-        <FooterLink text={'rent house'} />
         <FooterLink text={'build house'} />
+        <FooterLink text={'WaterProofing'} />
+        <FooterLink text={'Painting'} />
+        <FooterLink text={'+ All Civil Works A - Z'} />
+        
       </StackColumn>
       <StackColumn>
         <FooterTitle text={'our company'} />
@@ -77,7 +78,7 @@ const Footer = () => {
         maxWidth='100%'
         justifyContent='space-between'
         >
-          <Link href="#" variant="body2" 
+          <Link href="https://www.instagram.com/gm_civil_solutions" variant="body2" 
           sx={{
             color: '#414141',
             "&:hover": {

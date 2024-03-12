@@ -18,7 +18,10 @@ const Details = () => {
             phone: data.get('phone'),
         });
     }
-
+    const handleCall = () => {
+        // Replace '1234567890' with the actual phone number
+        window.location.href = 'tel:+917358584157';
+      };
 
     return (
         <Stack 
@@ -33,14 +36,14 @@ const Details = () => {
         >
             <Title 
             text={
-                'Interesting to buy property'
+                'Interesting to Build Your Dream House'
                 } 
             textAlign={'center'}
             />
             <Paragraph 
             text={
-                'If you are interested to buy the property contact us we will call you. \
-                Shortly to fulfill you requirements and property.'
+                'If you are interested to build your dream property feel free to contact us anytime 24/7 \
+                to fulfill you requirements and property.'
             }
             maxWidth = {'sm'}
             mx={0}
@@ -55,7 +58,7 @@ const Details = () => {
                 mt: 1,
                 py: 2
             }}>
-                <TextField
+                {/* <TextField
                     margin="normal"
                     required
                     fullWidth
@@ -74,8 +77,43 @@ const Details = () => {
                     type="phone"
                     id="phone"
                     autoComplete="current-phone"
-                />
-                <Button 
+                /> */}
+
+
+
+
+                {/* ////// */}
+                <Box
+        sx={{
+          mt: 2,
+          py: 2,
+        }}
+      >
+        <Button
+          variant="contained"
+          fullWidth
+          size="medium"
+          sx={{
+            fontSize: '0.9rem',
+            textTransform: 'capitalize',
+            py: 2,
+            mt: 2,
+            mb: 2,
+            borderRadius: 0,
+            backgroundColor: '#14192d',
+            "&:hover": {
+              backgroundColor: '#1e2a5a',
+            }
+          }}
+          onClick={handleCall}
+        >
+          Call Now
+        </Button>
+      </Box>
+
+                {/* ////// */}
+
+                {/* <Button 
                 variant="contained" 
                 fullWidth
                 type="submit"
@@ -94,7 +132,7 @@ const Details = () => {
                 }}
                 >
                     send
-                </Button>
+                </Button> */}
             </Box>
         </Stack>
     )
