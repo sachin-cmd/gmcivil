@@ -7,6 +7,7 @@
     width: 300px;
     margin-left: 800px;
     margin-top: 30px;
+    transition: transform 0.3s ease;
   }
   
   .project-card h2 {
@@ -18,8 +19,19 @@
     font-weight: bold;
     margin-top: 10px;
   }
+
+
   @media only screen and (max-width: 600px) {
     .project-card {
-      width: 100%; /* Take up the full width on smaller screens */
+        margin-left: 70px;
+        width: 65%;
+        padding-left: 1px;
+        padding-right: 1px;
+        padding-bottom: 10px; /* Make the card square */
     }
-  }
+}
+
+
+.project-card:hover {
+  transform: scale(1.05); 
+}

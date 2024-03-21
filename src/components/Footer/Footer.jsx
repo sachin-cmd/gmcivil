@@ -76,6 +76,7 @@ const Footer = () => {
         direction='row' 
         width= '70px'
         maxWidth='100%'
+        marginLeft='50px'
         justifyContent='space-between'
         >
           <Link href="https://www.instagram.com/gm_civil_solutions" variant="body2" 
@@ -88,7 +89,7 @@ const Footer = () => {
           >
             <InstagramIcon />  
           </Link> 
-          <Link href="#"variant="body2" 
+          {/* <Link href="#"variant="body2" 
           sx={{
             color: '#414141',
             "&:hover": {
@@ -97,7 +98,7 @@ const Footer = () => {
           }}
           >
             <FacebookIcon />
-          </Link> 
+          </Link>  */}
         </Stack>
         <Typography 
         variant='caption'

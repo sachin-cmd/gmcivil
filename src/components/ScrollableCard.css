@@ -1,0 +1,29 @@
+.scrollable-card {
+    width: 800px; /* Set desired width */
+    height: 400px; /* Set desired height */
+    border: 1px solid #ccc; /* Add border for visibility */
+    overflow-y: auto; /* Enable vertical scrolling */
+    scrollbar-width: thin; /* Set the width of the scrollbar */
+  }
+  
+  .image-container {
+    display: flex; /* Make images display side by side */
+    flex-wrap: wrap; /* Allow images to wrap to next row */
+    justify-content: space-evenly; /* Center images horizontally */
+  }
+  
+  .image-container img {
+    width: calc(33.33% - 10px); /* Calculate width for 3 images per row with spacing */
+    margin: 5px; /* Add spacing between images */
+    border-radius: 5px; /* Add rounded corners for a cute look */
+  }
+  
+  .image-container img:hover {
+    cursor: pointer; /* Change cursor to pointer on hover */
+  }
+  
+  .image-carousel-container {
+    width: 100%; /* Set the width to 100% to occupy the entire space */
+    margin-top: 10px; /* Add margin for spacing */
+  }
+  

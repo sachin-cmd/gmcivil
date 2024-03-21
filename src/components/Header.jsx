@@ -2,12 +2,14 @@ import React from 'react'
 import { Box, Button, styled, Typography } from "@mui/material";
 import { Link } from 'react-router-dom'
 //img
-import headerImg from '../assets/pexels-binyamin-mellish-186078.png'
+// import headerImg from '../assets/pexels-binyamin-mellish-186078.png'
+import headerImg from '../assets/wat.png'
+import { yellow } from '@mui/material/colors';
 
 const Header = () => {
 
     const CustomBox = styled(Box) (({ theme }) => ({
-        minHeight: '80vh',
+        minHeight: '75vh',
         display: 'flex',
         justifyContent: 'center',
         // tamanhos
@@ -48,7 +50,8 @@ const Header = () => {
                     color: '#fff',
                 }}
                 >
-                    We'll build house of your dream and repair all problems
+                   Trust us to safeguard your home from water damage with our expert waterproofing solutions, backed by a solid <p style={{ color: 'yellow', fontWeight: 'bold', display: 'inline' }}>10-year guarantee</p>
+
                 </Typography>
 
                 <Typography
@@ -61,7 +64,7 @@ const Header = () => {
                 }}
                 >
                     We have 9000 more review and our customers
-                    trust on out property and quality products.
+                    trust on our quality work.
                 </Typography>
 
                 <Box>
@@ -131,8 +134,9 @@ const Header = () => {
                 src={headerImg}
                 alt="headerImg"
                 style={{ 
-                    width: "100%", 
-                    marginBottom: -15,
+                    width: "90%", 
+                    marginLeft: "23px",
+                    marginBottom: -4,
                 }}
                 />
             </Box>

@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import {  
   styled, 
   useTheme,
@@ -11,7 +11,7 @@ import {
   ListItemText,
 } from '@mui/material'
 // rotas
-import { Link } from 'react-router-dom';
+import { Link ,useLocation} from 'react-router-dom';
 // icons
 import EmailIcon from '@mui/icons-material/Email';
 import HomeIcon from '@mui/icons-material/Home';
@@ -54,6 +54,7 @@ const DrawerItem = () => {
 
   const theme = useTheme();
   const [open, setOpen] = useState(false);
+  const location = useLocation();
   const handleDrawerOpen = () => {
     setOpen(true);
   };
@@ -62,6 +63,9 @@ const DrawerItem = () => {
     setOpen(false);
   };
 
+  useEffect(()=>{
+    setOpen(false);
+  },[location.pathname]);
   return (
     <>
       <IconButton
