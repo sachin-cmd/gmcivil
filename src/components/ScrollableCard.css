@@ -27,3 +27,14 @@
     margin-top: 10px; /* Add margin for spacing */
   }
   
+  @media (max-width: 600px) {
+    .scrollable-card {
+      width: 100%; /* Set width to 100% for full width */
+      height: auto; /* Set height to auto for dynamic height */
+    }
+  
+    .image-container img {
+      width: calc(100% - 20px); /* Calculate width for single image per row with spacing */
+      margin: 10px 0; /* Add spacing between images */
+    }
+  }

@@ -1,6 +1,7 @@
 import React ,{ useState }  from 'react';
 import { Carousel } from 'react-responsive-carousel';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
+import "./ImageCarousel.css"
 
 
 
@@ -57,8 +58,10 @@ setSelectedImage(null);
 
   return (
     <div>
+       
+<button class="button-90" onClick={handleBack} >Back</button>
      
-        <button onClick={handleBack}>Back</button>
+        {/* <button style={{backgroundColor:"lightblue",borderRadius:"15px",padding:"9px"}} onClick={handleBack}>Back</button> */}
     <Carousel
     centerSlidePercentage={40}
     thumbWidth={180}
